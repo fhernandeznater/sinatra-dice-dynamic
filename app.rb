@@ -61,7 +61,7 @@ get("/dynamic/:number_of_dice/:how_many_sides") do
   @rolls = []
 
   @num_dice.times do
-    die = rand(1..6)
+    die = rand(1..@sides)
 
     @rolls.push(die)
   end
